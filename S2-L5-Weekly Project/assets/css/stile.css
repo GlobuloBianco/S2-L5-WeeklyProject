@@ -1,0 +1,522 @@
+
+/* -----------------Settings del compito----------------- */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+h3 {
+    line-height: 1;
+}
+
+.bottone {
+    font-size: 1.9rem;
+    padding: 10px;
+    border: none;
+    color: white;
+    background: #67e1fe;
+    background: linear-gradient(90deg, #6cc1e2, #392f7a);
+}
+
+header {
+    box-shadow: 0 0 20px #d3d3d3;
+    background-color: white;
+}
+
+footer {
+    background-color: rgb(238, 238, 238);
+}
+
+/* --------------------HEADER----------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 1em;
+}
+
+.lista {
+    position: absolute;
+    margin: -50px 0;
+    list-style: none;
+    background-color: white;
+    left: 0;
+    border-bottom: 1px solid black;
+/* lunghezza del menu */
+    min-width: 100%;
+    max-height: 0;
+/* transition e barra laterale */
+    transition: max-height 0.5s;
+    overflow: hidden;
+  }
+/* nascondere il radio */
+  .selettore {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+/* altezza lista */
+  .selettore:focus ~ .lista {
+    max-height: 11em;
+  }
+
+  .lista a {
+    color: #e42424;
+    text-decoration: none;
+    display: block;
+    padding: 0.25em 1em;
+  }
+
+  .lista a:hover {
+    text-decoration: underline;
+  }
+
+  #registrami {
+    margin: 0.5em 19em 0.5em 0.5em;
+    color: white;
+    font-size: 1em;
+  }
+
+.lista-resp {
+    display: none;
+}
+/* ---------------MAIN index--------------- */ /* ---------------MAIN index--------------- */ /* ---------------MAIN index--------------- */
+.index-main-intro {
+    background-color: wheat;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 3em;
+}
+
+.index-main-intro h1, .index-main-intro p, #infoBtn{
+    color: white;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+
+#infoBtn {
+    margin-top: 1em;
+    padding: 5px 1em;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info div h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.iPosition i {
+    padding: 0;
+    margin: 0;
+}
+
+.infolist i{
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#blue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c48;
+    color: white;
+    padding: 2em 1em;
+    height: 300px;
+}
+
+#blue p {
+    margin-bottom: 3em;
+}
+
+#blue a {
+    text-decoration: none;
+}
+
+#laptop {
+    display: flex;
+    justify-content: center;
+}
+
+#laptop img {
+    margin-top: 4em;
+    width: 300px;
+}
+
+.lista-index {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-index .emoji h2{
+    font-size: 1.5em;
+    height: 10px;
+    margin: 1.3em;
+}
+
+.lista-index .emoji{
+    display: flex;
+    flex-direction: column;
+}
+/* ---------------MAIN chi siamo--------------- */ /* ---------------MAIN chi siamo--------------- */ /* ---------------MAIN chi siamo--------------- */
+.chisiamo-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.chisiamo-main-img {
+    width: 80%;
+    margin: 1.5em 0;
+}
+
+.chisiamo-tab-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 2em;
+}
+
+.chisiamo-tab-cont h2{
+    margin-top: 3em;
+    font-size: 1.5em;
+}
+
+.chisiamo-tab {
+    background-color: #d2dce7;
+}
+
+.chisiamo-tab td:nth-child(1) {  
+    font-weight: bold;
+}
+
+.tab-stripe td{
+    background-color: white;
+}
+
+.chisiamo-tab-resp {
+    display: none;
+}
+
+/* ---------------MAIN Contatti--------------- */ /* ---------------MAIN Contatti--------------- */ /* ---------------MAIN Contatti--------------- */
+main {
+    margin-bottom: 4em;
+}
+
+.form-container, main div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2, main h1 {
+    padding-top: 1.5em;
+    padding-bottom: 0.7em;
+}
+
+main h1 {
+    font-size: 3em;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+form input, form textarea {
+    margin-bottom: 1.7em;
+    padding: 1em ;
+}
+
+form textarea {
+    height: 60px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    font-style: italic;
+    padding: 0.3em;
+}
+
+.form-container input:last-child {
+    color: white;
+    margin: 0 auto;
+}
+/* ---------------ADDRESS--------------- */
+section h2 {
+    /* font-size: 1.5em; */
+    text-align: center;
+    padding-top: 0.8em;
+}
+
+section p {
+    text-align: center;
+}
+
+section p:last-child {
+    padding: 0 3em;
+}
+
+/* ---------------Footer--------------- */
+footer {
+    padding: 3em;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+footer p {
+    margin-bottom: 1em;
+}
+
+.lni {
+    color: #e42424;
+    font-size: 2.5em;
+    margin-bottom: 2em;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+footer input {
+    width: 300px;
+}
+
+footer input:last-child {
+    margin-top: -23px;
+    padding: 12px;
+    width: 331px;
+}
+
+
+
+
+
+
+/* --------------------RESPONSIVE--------------------- */
+
+/* ------------Tablet------------ */
+@media screen and (min-width: 768px) {
+/* -------Index------- */
+    /* .infolist-cont {
+        display: grid;
+        grid-template-areas:
+        'infolist1 infolist2 infolist3';
+    }
+
+    .infolist {
+
+    }
+
+    .bottomInfo {
+        display: flex;
+    }
+
+    #laptop {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lista-index {
+        width: 50%;
+    } */
+/* -------chi siamo------- */
+    .chisiamo-img-cont {
+        display: flex;
+    }
+
+    .chisiamo-tab-cont {
+        display: none;
+    }
+
+    .chisiamo-tab-resp {
+        display: flex;
+        flex-direction: column;
+        margin: 0 3em;
+    }
+
+    .chisiamo-tab-resp th {
+        background-color: #5177b0;
+        color: white;
+        padding: 0.5em 1em;
+    }
+
+    .tab-stripe-resp {
+        background-color: white;
+    }
+
+    .chisiamo-tab-resp td {
+        padding: 1.5em 1em;
+    }
+
+    .chisiamo-tab td:nth-child(1) {  
+        font-weight: normal;
+    }
+
+/* -------Contatti------- */
+    .contatti-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatti-flex {
+        display: flex;
+    }
+
+    .contatti-section1 {
+        width: 50%;
+    }
+
+    .contatti-section2{
+        width: 50%;
+        margin-top: -30px;
+    }
+
+    .contatti-section2 h2 {
+        font-size: 2em;
+    }
+}
+/* ------------Laptop------------ */
+@media screen and (min-width: 1170px) {
+/* -------Chi siamo------- */
+    .chisiamo-tab-resp {
+        margin: 0 12em;
+        margin-top: 6em;
+    }
+}
+
+
+/* DA NON TOCCARE CHE E' FINITO, per non confondere col resto del media screen separo il header/footer dal resto */
+    /* ------------------header---------------- */
+    @media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .lista-resp {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    header .lista-resp li {
+        display: flex;
+        align-items: center;
+        margin-left: 2em;
+    }
+
+    header .lista-resp a {
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
+    header .lista-resp a:hover {
+        text-decoration: underline;
+    }
+
+    header .lista-resp #registrami {
+        margin: 0;
+    }
+    /* ------------------footer---------------- */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        width: 25%;
+        padding: 1em;
+        flex-grow: 1;
+    }
+
+    footer h3 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        font-size: 1.1em;
+    }
+
+    footer input {
+        width: 170px;
+    }
+    
+    footer input:last-child {
+        margin-top: -23px;
+        padding: 12px;
+        width: 200px;
+    }
+
+    footer div:last-child {
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    footer input {
+        width: 300px;
+    }
+    
+    footer input:last-child {
+        margin-top: -23px;
+        padding: 12px;
+        width: 331px;
+    }
+  }
